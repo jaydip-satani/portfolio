@@ -11,7 +11,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Jaydip Satani </span>
             from <span className="purple"> Ahmedabad, India.</span>
             <br />
-            I am currently pursuing B-Tech at Nirma University.
+            I am currently pursuing B-Tech CSE at Nirma University.
             <br />
             I have completed Diploma in CE at CUSP surendranagar.
             <br />
