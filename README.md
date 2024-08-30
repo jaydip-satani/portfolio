@@ -1,9 +1,10 @@
 <h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://Jaydip.vercel.app/" target="_blank">Jaydip.tech</a>
+  Portfolio Website <br/>
+  <a href="https://jaydipsatani.com/" target="_blank">jaydipsatani.com</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Demo" src="Images/readme-img.png" />
+  
 </div>
 
 <br/>
@@ -20,18 +21,14 @@
 
 <h3 align="center">
     🔹
-    <a href="https://github.com/Jaydip4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
+    <a href="https://github.com/jaydip-satani/portfolio/issues">Report Bug</a> &nbsp; &nbsp;
     🔹
-    <a href="https://github.com/Jaydip4419/Portfolio/issues">Request Feature</a>
+    <a href="https://github.com/jaydip-satani/portfolio/issues">Request Feature</a>
 </h3>
-
-## TL;DR
-
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Jaydip4419](https://github.com/Jaydip4419/Portfolio). Thanks!
 
 ## Built With
 
-My personal portfolio <a href="https://Jaydip.vercel.app/" target="_blank">Jaydip.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://jaydipsatani.com/" target="_blank">jaydipsatani.com</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 
