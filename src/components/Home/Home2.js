@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
@@ -54,6 +54,18 @@ function Home2() {
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
+          <Col> <Button
+            href="https://www.digitalocean.com/?refcode=c4bf1c9a4919&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"
+            target="_blank"
+            className="fork-btn-inner"
+          >
+            Earn $200 Credit on Digital Ocean</Button></Col>
+          <Col> <Button
+            href="https://hostinger.in?REFERRALCODE=1JAYDIP29"
+            target="_blank"
+            className="fork-btn-inner"
+          >
+            Get 20% Discount on Hostinger</Button></Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
