@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet"; // Import Helmet for SEO
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
@@ -10,6 +11,21 @@ import Toolstack from "./Toolstack";
 function About() {
   return (
     <Container fluid className="about-section">
+      <Helmet>
+        <title>Jaydip Satani - About Me</title>
+        <meta name="description" content="Learn more about Jaydip Satani, a software developer skilled in React.js, JavaScript, and web technologies. Explore his professional skills, tools, and GitHub projects." />
+        <meta name="keywords" content="Jaydip Satani, About, Software Developer, React.js, JavaScript, Web Development, GitHub" />
+        <meta property="og:title" content="Jaydip Satani - About Me" />
+        <meta property="og:description" content="Learn more about Jaydip Satani, a software developer skilled in React.js, JavaScript, and web technologies." />
+        <meta property="og:image" content="https://jaydipsatani.com/readme-img.png" />
+        <meta property="og:url" content="https://jaydipsatani.com/about" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Jaydip Satani - About Me" />
+        <meta name="twitter:description" content="Learn more about Jaydip Satani, a software developer skilled in React.js, JavaScript, and web technologies." />
+        <meta name="twitter:image" content="https://jaydipsatani.com/readme-img.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>

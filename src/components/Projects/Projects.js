@@ -1,25 +1,36 @@
 import React from "react";
+import { Helmet } from "react-helmet";  // Import Helmet for SEO
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
 import careerPaths from "../../Assets/Projects/carer_paths.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-import videcareerPathsVideo from "../../Assets/videos/career_paths.mp4"
+import videcareerPathsVideo from "../../Assets/videos/career_paths.mp4";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
+      <Helmet>
+        <title>Jaydip Satani - Projects</title>
+        <meta name="description" content="A collection of projects created by Jaydip Satani, including web development, career guidance platforms, and more." />
+        <meta name="keywords" content="Jaydip Satani, Projects, Web Development, Career Paths, React.js" />
+        <meta property="og:title" content="Jaydip Satani - Projects" />
+        <meta property="og:description" content="A collection of projects created by Jaydip Satani, including web development, career guidance platforms, and more." />
+        <meta property="og:image" content="https://jaydipsatani.com/readme-img.png" />
+        <meta property="og:url" content="https://jaydipsatani.com/projects" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Jaydip Satani - Projects" />
+        <meta name="twitter:description" content="A collection of projects created by Jaydip Satani, including web development, career guidance platforms, and more." />
+        <meta name="twitter:image" content="https://jaydipsatani.com/readme-img.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My  <strong className="purple">Projects </strong>
+          My <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked .
+          Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">

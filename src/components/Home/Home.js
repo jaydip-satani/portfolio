@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";  // Import Helmet for SEO
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
@@ -8,6 +9,21 @@ import Type from "./Type";
 function Home() {
   return (
     <section>
+      <Helmet>
+        <title>Jaydip Satani - Developer Portfolio</title>
+        <meta name="description" content="Jaydip Satani's personal website showcasing development skills and projects using React.js." />
+        <meta name="keywords" content="Jaydip Satani, Developer, React.js, Portfolio" />
+        <meta property="og:title" content="Jaydip Satani - Developer Portfolio" />
+        <meta property="og:description" content="Jaydip Satani's personal website showcasing development skills and projects using React.js." />
+        <meta property="og:image" content="https://jaydipsatani.com/readme-img.png" />
+        <meta property="og:url" content="https://jaydipsatani.com" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Jaydip Satani - Developer Portfolio" />
+        <meta name="twitter:description" content="Jaydip Satani's personal website showcasing development skills and projects using React.js." />
+        <meta name="twitter:image" content="https://jaydipsatani.com/readme-img.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
