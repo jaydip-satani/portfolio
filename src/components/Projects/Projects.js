@@ -43,6 +43,16 @@ function Projects() {
               demoLink={videcareerPathsVideo}
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={careerPaths}
+              isBlog={false}
+              title="Plus-Care"
+              description="The Smart Appointment System is a web-based platform designed to streamline the process of booking doctor appointments. It allows patients to register, search for doctors, and manage their appointments, while doctors can view their appointments and add prescriptions. Administrators have control over managing doctors and overseeing appointments, providing a centralized solution for efficient healthcare management."
+              ghLink="https://github.com/jaydip-satani/plus_care"
+              demoLink="https://pluscare.jaydipsatani.com"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>
