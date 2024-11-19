@@ -1,10 +1,12 @@
 import React from "react";
-import { Helmet } from "react-helmet";  // Import Helmet for SEO
+import { Helmet } from "react-helmet";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import careerPaths from "../../Assets/Projects/carer_paths.png";
 import videcareerPathsVideo from "../../Assets/videos/career_paths.mp4";
+import bms from "../../Assets/Projects/bms.jpg";
+import plusCare from "../../Assets/Projects/plus_care.jpeg";
 
 function Projects() {
   return (
@@ -45,12 +47,22 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={careerPaths}
+              imgPath={plusCare}
               isBlog={false}
               title="Plus-Care"
               description="The Smart Appointment System is a web-based platform designed to streamline the process of booking doctor appointments. It allows patients to register, search for doctors, and manage their appointments, while doctors can view their appointments and add prescriptions. Administrators have control over managing doctors and overseeing appointments, providing a centralized solution for efficient healthcare management."
               ghLink="https://github.com/jaydip-satani/plus_care"
               demoLink="https://pluscare.jaydipsatani.com"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bms}
+              isBlog={false}
+              title="Bank-Management-System"
+              description="The Bank Management System is a web application that enables administrators and employees to manage bank accounts, loan applications, and transactions effectively. It provides a secure and user-friendly interface for creating, updating, and closing accounts while ensuring authorized access to sensitive functionalities."
+              ghLink="https://github.com/jaydip-satani/bms"
+            // demoLink="https://pluscare.jaydipsatani.com"
             />
           </Col>
         </Row>
