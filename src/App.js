@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import { useLocation } from "react-router-dom";
 import {
   BrowserRouter as Router,
   Route,
@@ -15,8 +16,15 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ReactGA from 'react-ga4';
+
+const TRACKING_ID = process.env.REACT_APP_GA_TRACKING_ID;
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+  }, []);
+
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
@@ -28,6 +36,7 @@ function App() {
 
   return (
     <Router>
+      <PageTracker />
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
@@ -42,6 +51,19 @@ function App() {
       </div>
     </Router>
   );
+}
+
+function usePageTracking() {
+  const location = useLocation();
+  console.log(location.pathname)
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
+}
+
+function PageTracker() {
+  usePageTracking();
+  return null;
 }
 
 export default App;
