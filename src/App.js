@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import { useLocation } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react"
 import {
   BrowserRouter as Router,
   Route,
@@ -36,6 +37,7 @@ function App() {
 
   return (
     <Router>
+      <Analytics />
       <PageTracker />
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
