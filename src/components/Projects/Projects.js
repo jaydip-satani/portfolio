@@ -6,6 +6,7 @@ import Particle from "../Particle";
 import careerPaths from "../../Assets/Projects/carer_paths.png";
 import videcareerPathsVideo from "../../Assets/videos/career_paths.mp4";
 import bms from "../../Assets/Projects/bms.jpg";
+import quickNote from "../../Assets/Projects/blog.png";
 import plusCare from "../../Assets/Projects/plus_care.jpeg";
 
 function Projects() {
@@ -63,6 +64,16 @@ function Projects() {
               description="The Bank Management System is a web application that enables administrators and employees to manage bank accounts, loan applications, and transactions effectively. It provides a secure and user-friendly interface for creating, updating, and closing accounts while ensuring authorized access to sensitive functionalities."
               ghLink="https://github.com/jaydip-satani/bms"
             // demoLink="https://pluscare.jaydipsatani.com"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={quickNote}
+              isBlog={false}
+              title="Quick-Note"
+              description="Quick-Note is a powerful note-taking platform that allows you to archive notes, move them to a bin, and secure your important notes with a secure note feature. Users can also pin notes to ensure they appear at the top for quick access."
+              ghLink="https://github.com/jaydip-satani/quick-note"
+              demoLink="https://quicknote.jaydipsatani.com"
             />
           </Col>
         </Row>
