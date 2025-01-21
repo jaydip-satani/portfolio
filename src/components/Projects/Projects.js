@@ -6,7 +6,7 @@ import Particle from "../Particle";
 import careerPaths from "../../Assets/Projects/carer_paths.png";
 import videcareerPathsVideo from "../../Assets/videos/career_paths.mp4";
 import bms from "../../Assets/Projects/bms.jpg";
-import quickNote from "../../Assets/Projects/blog.png";
+import quickNote from "../../Assets/Projects/quicknote.png";
 import plusCare from "../../Assets/Projects/plus_care.jpeg";
 
 function Projects() {
